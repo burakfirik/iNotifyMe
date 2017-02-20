@@ -5,11 +5,10 @@ iOS Swift 3 app demonstrates UserNotifications
 Here's a walkthrough of implemented user stories:
 
 
-<img src='https://raw.githubusercontent.com/burakfirik/TipCalculator/master/iPhone5s.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/burakfirik/iNotifyMe/blob/master/iPhone6_iNotif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
-<img src='https://github.com/burakfirik/TipCalculator/blob/master/iPhone7.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
