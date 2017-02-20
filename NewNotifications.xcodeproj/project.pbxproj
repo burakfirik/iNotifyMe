@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1029271E5A6BF100623870 /* bk.gif in Resources */ = {isa = PBXBuildFile; fileRef = AE1029261E5A6BF100623870 /* bk.gif */; };
 		AEBD9C2B1E59194E002468D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD9C2A1E59194E002468D7 /* AppDelegate.swift */; };
 		AEBD9C2D1E59194E002468D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD9C2C1E59194E002468D7 /* ViewController.swift */; };
 		AEBD9C301E59194E002468D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBD9C2E1E59194E002468D7 /* Main.storyboard */; };
 		AEBD9C321E59194E002468D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBD9C311E59194E002468D7 /* Assets.xcassets */; };
 		AEBD9C351E59194E002468D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBD9C331E59194E002468D7 /* LaunchScreen.storyboard */; };
 		AEBD9C401E59194E002468D7 /* NewNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD9C3F1E59194E002468D7 /* NewNotificationsTests.swift */; };
+		AEBD9C531E5A40B5002468D7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBD9C521E5A40B5002468D7 /* UserNotifications.framework */; };
+		AEBD9C551E5A40B5002468D7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBD9C541E5A40B5002468D7 /* UserNotificationsUI.framework */; };
+		AEBD9C581E5A40B5002468D7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD9C571E5A40B5002468D7 /* NotificationViewController.swift */; };
+		AEBD9C5B1E5A40B5002468D7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBD9C591E5A40B5002468D7 /* MainInterface.storyboard */; };
+		AEBD9C5F1E5A40B5002468D7 /* MyContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEBD9C501E5A40B5002468D7 /* MyContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +29,31 @@
 			remoteGlobalIDString = AEBD9C261E59194E002468D7;
 			remoteInfo = NewNotifications;
 		};
+		AEBD9C5D1E5A40B5002468D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEBD9C1F1E59194E002468D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEBD9C4F1E5A40B5002468D7;
+			remoteInfo = MyContentExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AEBD9C631E5A40B5002468D7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AEBD9C5F1E5A40B5002468D7 /* MyContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AE1029261E5A6BF100623870 /* bk.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bk.gif; sourceTree = "<group>"; };
 		AEBD9C271E59194E002468D7 /* NewNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBD9C2A1E59194E002468D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBD9C2C1E59194E002468D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +64,12 @@
 		AEBD9C3B1E59194E002468D7 /* NewNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBD9C3F1E59194E002468D7 /* NewNotificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotificationsTests.swift; sourceTree = "<group>"; };
 		AEBD9C411E59194E002468D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBD9C501E5A40B5002468D7 /* MyContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBD9C521E5A40B5002468D7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AEBD9C541E5A40B5002468D7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		AEBD9C571E5A40B5002468D7 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		AEBD9C5A1E5A40B5002468D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AEBD9C5C1E5A40B5002468D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +87,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEBD9C4D1E5A40B5002468D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBD9C551E5A40B5002468D7 /* UserNotificationsUI.framework in Frameworks */,
+				AEBD9C531E5A40B5002468D7 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AEBD9C1E1E59194E002468D7 = {
 			isa = PBXGroup;
 			children = (
+				AEBD9C561E5A40B5002468D7 /* MyContentExtension */,
 				AEBD9C291E59194E002468D7 /* NewNotifications */,
 				AEBD9C3E1E59194E002468D7 /* NewNotificationsTests */,
+				AEBD9C511E5A40B5002468D7 /* Frameworks */,
 				AEBD9C281E59194E002468D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +115,7 @@
 			children = (
 				AEBD9C271E59194E002468D7 /* NewNotifications.app */,
 				AEBD9C3B1E59194E002468D7 /* NewNotificationsTests.xctest */,
+				AEBD9C501E5A40B5002468D7 /* MyContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +127,7 @@
 				AEBD9C2C1E59194E002468D7 /* ViewController.swift */,
 				AEBD9C2E1E59194E002468D7 /* Main.storyboard */,
 				AEBD9C311E59194E002468D7 /* Assets.xcassets */,
+				AE1029261E5A6BF100623870 /* bk.gif */,
 				AEBD9C331E59194E002468D7 /* LaunchScreen.storyboard */,
 				AEBD9C361E59194E002468D7 /* Info.plist */,
 			);
@@ -96,6 +143,25 @@
 			path = NewNotificationsTests;
 			sourceTree = "<group>";
 		};
+		AEBD9C511E5A40B5002468D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD9C521E5A40B5002468D7 /* UserNotifications.framework */,
+				AEBD9C541E5A40B5002468D7 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEBD9C561E5A40B5002468D7 /* MyContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD9C571E5A40B5002468D7 /* NotificationViewController.swift */,
+				AEBD9C591E5A40B5002468D7 /* MainInterface.storyboard */,
+				AEBD9C5C1E5A40B5002468D7 /* Info.plist */,
+			);
+			path = MyContentExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +172,12 @@
 				AEBD9C231E59194E002468D7 /* Sources */,
 				AEBD9C241E59194E002468D7 /* Frameworks */,
 				AEBD9C251E59194E002468D7 /* Resources */,
+				AEBD9C631E5A40B5002468D7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AEBD9C5E1E5A40B5002468D7 /* PBXTargetDependency */,
 			);
 			name = NewNotifications;
 			productName = NewNotifications;
@@ -134,6 +202,23 @@
 			productReference = AEBD9C3B1E59194E002468D7 /* NewNotificationsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AEBD9C4F1E5A40B5002468D7 /* MyContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEBD9C601E5A40B5002468D7 /* Build configuration list for PBXNativeTarget "MyContentExtension" */;
+			buildPhases = (
+				AEBD9C4C1E5A40B5002468D7 /* Sources */,
+				AEBD9C4D1E5A40B5002468D7 /* Frameworks */,
+				AEBD9C4E1E5A40B5002468D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyContentExtension;
+			productName = MyContentExtension;
+			productReference = AEBD9C501E5A40B5002468D7 /* MyContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +240,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = AEBD9C261E59194E002468D7;
 					};
+					AEBD9C4F1E5A40B5002468D7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 49TA9779W8;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AEBD9C221E59194E002468D7 /* Build configuration list for PBXProject "NewNotifications" */;
@@ -172,6 +262,7 @@
 			targets = (
 				AEBD9C261E59194E002468D7 /* NewNotifications */,
 				AEBD9C3A1E59194E002468D7 /* NewNotificationsTests */,
+				AEBD9C4F1E5A40B5002468D7 /* MyContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1029271E5A6BF100623870 /* bk.gif in Resources */,
 				AEBD9C351E59194E002468D7 /* LaunchScreen.storyboard in Resources */,
 				AEBD9C321E59194E002468D7 /* Assets.xcassets in Resources */,
 				AEBD9C301E59194E002468D7 /* Main.storyboard in Resources */,
@@ -191,6 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBD9C4E1E5A40B5002468D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBD9C5B1E5A40B5002468D7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +314,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEBD9C4C1E5A40B5002468D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBD9C581E5A40B5002468D7 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -221,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = AEBD9C261E59194E002468D7 /* NewNotifications */;
 			targetProxy = AEBD9C3C1E59194E002468D7 /* PBXContainerItemProxy */;
+		};
+		AEBD9C5E1E5A40B5002468D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEBD9C4F1E5A40B5002468D7 /* MyContentExtension */;
+			targetProxy = AEBD9C5D1E5A40B5002468D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -239,6 +352,14 @@
 				AEBD9C341E59194E002468D7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AEBD9C591E5A40B5002468D7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEBD9C5A1E5A40B5002468D7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +459,7 @@
 		AEBD9C451E59194E002468D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 49TA9779W8;
 				INFOPLIST_FILE = NewNotifications/Info.plist;
@@ -351,6 +473,7 @@
 		AEBD9C461E59194E002468D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 49TA9779W8;
 				INFOPLIST_FILE = NewNotifications/Info.plist;
@@ -391,6 +514,32 @@
 			};
 			name = Release;
 		};
+		AEBD9C611E5A40B5002468D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49TA9779W8;
+				INFOPLIST_FILE = MyContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kismat.NewNotifications.MyContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEBD9C621E5A40B5002468D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49TA9779W8;
+				INFOPLIST_FILE = MyContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kismat.NewNotifications.MyContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +559,7 @@
 				AEBD9C461E59194E002468D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEBD9C471E59194E002468D7 /* Build configuration list for PBXNativeTarget "NewNotificationsTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +568,16 @@
 				AEBD9C491E59194E002468D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEBD9C601E5A40B5002468D7 /* Build configuration list for PBXNativeTarget "MyContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEBD9C611E5A40B5002468D7 /* Debug */,
+				AEBD9C621E5A40B5002468D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
